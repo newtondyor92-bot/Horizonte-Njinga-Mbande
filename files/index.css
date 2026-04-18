@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     }
 .logo img{
     width: 150px;
@@ -14,8 +15,9 @@ body{
     background-color: black;
 }
 header{
-    background-color: 0a3d91;
-    padding: 40PX 4%;
+    
+    background:#0a3d91;color:#fff;padding:15px 30px;display:flex;justify-content:space-between;align-items:center;
+    font-family: arial;
 }
 .interface{
     max-width: 1000px;
@@ -54,8 +56,14 @@ header ul {
 .apresentacao>h1, h3, p{
     color: white;
     margin: 0 auto;
+    padding: 50px 0px 0px 200px;
+    
 }
 .apresentacao>h1{
     font-size: 70px;
     font-family: Arial, Helvetica, sans-serif;
 }
+.apresentacao>h3{
+    font-size: 30px
+}
+.btn{background:#1e6bff;color:#fff;padding:10px 15px;border-radius:5px;text-decoration:none}
