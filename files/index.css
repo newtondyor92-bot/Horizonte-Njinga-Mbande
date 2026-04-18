@@ -19,7 +19,7 @@ header{
     padding: 40PX 4%;
 }
 .interface{
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -41,11 +41,11 @@ header ul {
 }
 .navegacao{
     max-width: 80%;
-    background-color: yellow;
+   
 }
 .apresentacao{
     background-image: url(imagens/outas/apresentacao.jpg);
-    background-size: cover;        /* Faz a imagem cobrir toda a área */
+    background-size: contain;        /* Faz a imagem cobrir toda a área */
     background-position: center;   /* Centraliza a imagem */
     background-repeat: no-repeat;  /* Evita repetição */
     height: 500px;                /* Altura da área */
