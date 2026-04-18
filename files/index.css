@@ -9,13 +9,12 @@
 }
 .logo{
     max-width: 20%;
-    background-color: aqua;
 }
 body{
     background-color: black;
 }
 header{
-    background-color: rgb(6, 6, 102);
+    background-color: 0a3d91;
     padding: 40PX 4%;
 }
 .interface{
