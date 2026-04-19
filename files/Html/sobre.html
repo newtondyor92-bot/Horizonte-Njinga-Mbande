@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+    <link rel="stylesheet" href="../Css/index.css">
+    <style>
+        body{margin:0;padding-top:80px;font-family:Arial, sans-serif;background:#f5f9ff;color:#0a1f44}
+        header{position:fixed;top:0;left:0;width:100%;z-index:999;background:#0a3d91;color:#fff;padding:15px 10vw;display:flex;justify-content:space-between;align-items:center}
+        header img{display:block}
+        header nav ul{display:flex;gap:18px;align-items:center;list-style:none;margin:0;padding:0}
+        header nav ul a{color:#fff;text-decoration:none;font-weight:500}
+        .btn{background:#1e6bff;color:#fff;padding:10px 15px;border-radius:5px;text-decoration:none}
+        .about-page{max-width:1000px;margin:40px auto;padding:0 20px}
+        .about-section{margin-bottom:40px}
+        .about-section h2{margin-bottom:15px;color:#0a3d91;font-size:1.8rem;border-bottom:2px solid #0a3d91;padding-bottom:5px}
+        .about-section p{margin-bottom:15px;line-height:1.7;color:#4d5b7b}
+        .about-section ul{margin-left:20px;margin-bottom:15px}
+        .about-section li{margin-bottom:8px;color:#4d5b7b}
+        .vision-mission{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-bottom:40px}
+        .vision, .mission{background:#fff;padding:25px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.08)}
+        .vision h3, .mission h3{margin-bottom:10px;color:#0a3d91;font-size:1.3rem}
+        .portfolio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+        .portfolio-item{background:#fff;padding:20px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.08);text-align:center}
+        .portfolio-item h4{margin-bottom:10px;color:#0a3d91}
+        .portfolio-item p{color:#4d5b7b;line-height:1.6}
+        @media(max-width:768px){.vision-mission{grid-template-columns:1fr}.about-page{margin:20px auto}}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../imagens/logo/logo_sem_fundo.png" alt="Logotipo do Horizonte Njinga Mbande" width="66" height="33">
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn">Comprar Bilhete</a>
+    </header>
+
+    <main class="about-page">
+        <section class="about-section">
+            <h2>Sobre a Horizonte Njinga Mbande</h2>
+            <p>A Horizonte Njinga Mbande é uma organização dedicada à promoção e preservação da cultura angolana. Fundada em 2020, nossa missão é conectar comunidades através de eventos culturais, atividades educativas e exposições artísticas que celebram a rica herança de Angola. Trabalhamos para inspirar gerações futuras, preservando tradições e incentivando a inovação cultural.</p>
+            <p>Com sede em Luanda, expandimos nossas atividades para todo o território angolano, colaborando com artistas, educadores e instituições locais para criar experiências memoráveis e inclusivas.</p>
+        </section>
+
+        <section class="vision-mission">
+            <div class="vision">
+                <h3>Visão</h3>
+                <p>Ser a principal referência em promoção cultural em Angola, reconhecida internacionalmente pela excelência em eventos e pela contribuição para o desenvolvimento sustentável da arte e cultura angolana.</p>
+            </div>
+            <div class="mission">
+                <h3>Missão</h3>
+                <p>Promover a cultura angolana através de eventos, atividades e iniciativas que educam, entretêm e unem comunidades, preservando tradições e incentivando a criatividade contemporânea.</p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>Valores</h2>
+            <ul>
+                <li><strong>Inclusão:</strong> Garantir que todas as vozes culturais sejam ouvidas e valorizadas.</li>
+                <li><strong>Inovação:</strong> Combinar tradições com abordagens modernas para enriquecer a experiência cultural.</li>
+                <li><strong>Sustentabilidade:</strong> Promover práticas que preservem o patrimônio cultural para as futuras gerações.</li>
+                <li><strong>Comunidade:</strong> Fomentar conexões entre pessoas e grupos através da arte e cultura.</li>
+                <li><strong>Excelência:</strong> Comprometer-se com a qualidade em todos os nossos projetos e eventos.</li>
+            </ul>
+        </section>
+
+        <section class="about-section">
+            <h2>Portfólio</h2>
+            <p>Nosso portfólio inclui uma variedade de projetos e realizações que demonstram nosso compromisso com a cultura angolana. Aqui estão alguns destaques:</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <h4>Festivais Culturais</h4>
+                    <p>Organizamos mais de 50 festivais anuais, incluindo o Festival de Música Tradicional e o Festival de Dança Angolana, reunindo milhares de participantes.</p>
+                </div>
+                <div class="portfolio-item">
+                    <h4>Exposições de Arte</h4>
+                    <p>Curamos exposições em museus e galerias, apresentando obras de artistas angolanos emergentes e estabelecidos, com foco em temas contemporâneos.</p>
+                </div>
+                <div class="portfolio-item">
+                    <h4>Programas Educativos</h4>
+                    <p>Desenvolvemos workshops e cursos para jovens, ensinando técnicas artísticas tradicionais e incentivando a criatividade em comunidades rurais e urbanas.</p>
+                </div>
+                <div class="portfolio-item">
+                    <h4>Publicações</h4>
+                    <p>Editamos livros, revistas e materiais digitais sobre história cultural angolana, disponíveis online e em bibliotecas públicas.</p>
+                </div>
+                <div class="portfolio-item">
+                    <h4>Parcerias Internacionais</h4>
+                    <p>Colaboramos com organizações globais para trocar conhecimentos culturais, participando de eventos internacionais e trazendo exposições estrangeiras para Angola.</p>
+                </div>
+                <div class="portfolio-item">
+                    <h4>Projetos Comunitários</h4>
+                    <p>Iniciativas locais que envolvem comunidades em atividades culturais, como feiras de artesanato e sessões de contação de histórias tradicionais.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>Equipe</h2>
+            <p>Nossa equipe é composta por profissionais apaixonados pela cultura angolana, incluindo curadores, educadores, artistas e administradores. Juntos, trabalhamos para tornar a cultura acessível e vibrante para todos.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Contato</h2>
+            <p>Para mais informações sobre nossos projetos ou parcerias, entre em contato através da página de Contacto ou visite nossas redes sociais.</p>
+        </section>
+    </main>
+</body>
+</html>

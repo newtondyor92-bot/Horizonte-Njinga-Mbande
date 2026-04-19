@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="../Css/index.css">
+    <style>
+        body{margin:0;padding-top:80px;font-family:Arial, sans-serif;background:#f5f9ff;color:#0a1f44}
+        header{position:fixed;top:0;left:0;width:100%;z-index:999;background:#0a3d91;color:#fff;padding:15px 10vw;display:flex;justify-content:space-between;align-items:center}
+        header img{display:block}
+        header nav ul{display:flex;gap:18px;align-items:center;list-style:none;margin:0;padding:0}
+        header nav ul a{color:#fff;text-decoration:none;font-weight:500}
+        .btn{background:#1e6bff;color:#fff;padding:10px 15px;border-radius:5px;text-decoration:none}
+        .gallery-page{max-width:1120px;margin:40px auto;padding:0 20px}
+        .gallery-intro{margin-bottom:30px}
+        .gallery-intro h1{margin-bottom:10px;font-size:2.4rem;color:#0a3d91}
+        .gallery-intro p{font-size:1rem;color:#3b4c76;max-width:700px;line-height:1.7}
+        .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+        .gallery-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,0.1)}
+        .gallery-card img{width:100%;display:block;height:220px;object-fit:cover}
+        .gallery-card-content{padding:20px}
+        .gallery-card-content h3{margin:0 0 10px;color:#0a3d91;font-size:1.2rem}
+        .gallery-card-content p{margin:0;color:#4d5b7b;line-height:1.7}
+        @media(max-width:640px){header{flex-wrap:wrap;gap:15px}header nav ul{flex-wrap:wrap;gap:12px} .gallery-page{margin:20px auto}}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../imagens/logo/logo_sem_fundo.png" alt="Logotipo do Horizonte Njinga Mbande" width="66" height="33">
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn">Comprar Bilhete</a>
+    </header>
+
+    <main class="gallery-page">
+        <section class="gallery-intro">
+            <h1>Galeria de Imagens</h1>
+            <p>Explore imagens e descrições dos eventos culturais, práticas artísticas e momentos especiais da comunidade.</p>
+        </section>
+
+        <section class="gallery-grid">
+            <article class="gallery-card">
+                <img src="../imagens/outras/apresentacao.jpg" alt="Apresentação cultural">
+                <div class="gallery-card-content">
+                    <h3>Apresentação Cultural</h3>
+                    <p>Uma performance tradicional com música, dança e trajes típicos da cultura local.</p>
+                </div>
+            </article>
+            <article class="gallery-card">
+                <img src="../imagens/outras/o enterro.jpg" alt="Evento cultural"> 
+                <div class="gallery-card-content">
+                    <h3>Cerimônia e Memória</h3>
+                    <p>Registo de um momento cultural importante para celebrar tradições e memórias coletivas.</p>
+                </div>
+            </article>
+            <article class="gallery-card">
+                <img src="../imagens/outras/Fundo do footer.png" alt="Arte e design">
+                <div class="gallery-card-content">
+                    <h3>Arte Visual</h3>
+                    <p>Trabalhos artísticos e visuais que refletem a identidade do projeto Horizonte Njinga Mbande.</p>
+                </div>
+            </article>
+            <article class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1515169067865-5387ec356754?auto=format&fit=crop&w=800&q=80" alt="Música e festa">
+                <div class="gallery-card-content">
+                    <h3>Festa Cultural</h3>
+                    <p>Imagens de eventos onde arte e comunidade se encontram para celebrar o património.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

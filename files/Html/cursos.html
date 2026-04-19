@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - Teatro Horizonte Njinga Mbande</title>
+    <link rel="stylesheet" href="../Css/index.css">
+    <style>
+        body{margin:0;padding-top:80px;font-family:Arial, sans-serif;background:#f5f9ff;color:#0a1f44}
+        header{position:fixed;top:0;left:0;width:100%;z-index:999;background:#0a3d91;color:#fff;padding:15px 10vw;display:flex;justify-content:space-between;align-items:center}
+        header img{display:block}
+        header nav ul{display:flex;gap:18px;align-items:center;list-style:none;margin:0;padding:0}
+        header nav ul a{color:#fff;text-decoration:none;font-weight:500}
+        .btn{background:#1e6bff;color:#fff;padding:10px 15px;border-radius:5px;text-decoration:none}
+        .courses-page{max-width:1100px;margin:40px auto;padding:0 20px}
+        .courses-intro{margin-bottom:30px;text-align:center}
+        .courses-intro h1{margin-bottom:10px;font-size:2.4rem;color:#0a3d91}
+        .courses-intro p{font-size:1rem;color:#3b4c76;line-height:1.7}
+        .courses-layout{display:grid;grid-template-columns:1.2fr 0.8fr;gap:24px;align-items:start}
+        .courses-list{display:grid;gap:20px}
+        .course-card{background:#fff;border-radius:18px;padding:24px;box-shadow:0 12px 30px rgba(0,0,0,0.08);border:1px solid rgba(10,61,145,0.12)}
+        .course-card h3{margin-top:0;color:#dc3545}
+        .course-card p{margin:12px 0;color:#3b4c76;line-height:1.7}
+        .course-card strong{color:#0a3d91}
+        .enroll-btn{background:#0a3d91;color:#fff;border:none;padding:12px 18px;border-radius:10px;cursor:pointer;font-weight:600}
+        .enroll-btn:hover{background:#082a66}
+        .course-form-panel{background:#fff;border-radius:18px;box-shadow:0 12px 30px rgba(0,0,0,0.08);padding:30px;min-height:460px;display:flex;flex-direction:column}
+        .form-placeholder{margin:auto;text-align:center;color:#3b4c76}
+        .registration-form{display:none;}
+        .registration-form.active{display:block}
+        .registration-form h2{margin-bottom:18px;color:#0a3d91;text-align:left}
+        .registration-form strong{color:#dc3545}
+        .form-group{margin-bottom:18px}
+        .form-group label{display:block;margin-bottom:8px;color:#0a1f44;font-weight:600}
+        .form-group input, .form-group select{width:100%;padding:12px 14px;border:1px solid #ced4da;border-radius:8px;font-size:14px;font-family:Arial, sans-serif}
+        .form-group input:focus, .form-group select:focus{outline:none;border-color:#0a3d91}
+        .submit-btn{background:#dc3545;color:#fff;border:none;padding:14px 24px;border-radius:8px;cursor:pointer;font-size:16px;width:100%;margin-top:10px}
+        .submit-btn:hover{background:#c82333}
+        .loading{display:none;text-align:center;margin-top:10px;color:#0a3d91}
+        .success{display:none;text-align:center;margin-top:20px;color:#28a745;font-weight:600}
+        @media(max-width:960px){.courses-layout{grid-template-columns:1fr}}
+        @media(max-width:640px){.courses-page{margin:20px auto}.course-card{padding:18px}.course-form-panel{padding:22px}}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../imagens/logo/logo_sem_fundo.png" alt="Logotipo do Horizonte Njinga Mbande" width="66" height="33">
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn">Comprar Bilhete</a>
+    </header>
+    <main class="courses-page">
+        <section class="courses-intro">
+            <h1>Cursos de Teatro</h1>
+            <p>Inscreva-se nos nossos cursos de atuação, dança e produção teatral. Desenvolva suas habilidades artísticas com profissionais experientes.</p>
+        </section>
+
+        <section class="courses-layout">
+            <div class="courses-list">
+                <div class="course-card">
+                    <h3>Atuação Criativa</h3>
+                    <p>Aprenda técnicas de interpretação, expressão corporal e improvisação para criar personagens marcantes.</p>
+                    <p><strong>Duração:</strong> 8 semanas</p>
+                    <p><strong>Nível:</strong> Iniciante a Intermediário</p>
+                    <button class="enroll-btn" data-course="Atuação Criativa">Inscrição</button>
+                </div>
+                <div class="course-card">
+                    <h3>Oficina de Dança Tradicional</h3>
+                    <p>Descubra ritmos africanos e movimentos culturais para fortalecer presença de palco e ritmo.</p>
+                    <p><strong>Duração:</strong> 6 semanas</p>
+                    <p><strong>Nível:</strong> Todos os níveis</p>
+                    <button class="enroll-btn" data-course="Oficina de Dança Tradicional">Inscrição</button>
+                </div>
+                <div class="course-card">
+                    <h3>Produção Teatral</h3>
+                    <p>Explore cenografia, iluminação, sonoplastia e direção para montar espetáculos completos.</p>
+                    <p><strong>Duração:</strong> 10 semanas</p>
+                    <p><strong>Nível:</strong> Intermediário a Avançado</p>
+                    <button class="enroll-btn" data-course="Produção Teatral">Inscrição</button>
+                </div>
+                <div class="course-card">
+                    <h3>Literatura e Dramaturgia</h3>
+                    <p>Desenvolva roteiros e textos teatrais com foco em histórias angolanas e representatividade cultural.</p>
+                    <p><strong>Duração:</strong> 7 semanas</p>
+                    <p><strong>Nível:</strong> Todos os níveis</p>
+                    <button class="enroll-btn" data-course="Literatura e Dramaturgia">Inscrição</button>
+                </div>
+            </div>
+
+            <aside class="course-form-panel">
+                <div class="form-placeholder" id="form-placeholder">
+                    <h2>Formulário de Inscrição</h2>
+                    <p>Escolha um curso à esquerda e o formulário de inscrição será exibido aqui.</p>
+                </div>
+
+                <section class="registration-form" id="registration-panel">
+                    <h2>Inscrever-se em <strong id="course-title">Curso Selecionado</strong></h2>
+                    <form id="registration-form">
+                        <input type="hidden" id="curso_selecionado" name="curso_selecionado">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="data_nascimento">Data de Nascimento</label>
+                            <input type="date" id="data_nascimento" name="data_nascimento" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="genero">Gênero</label>
+                            <select id="genero" name="genero" required>
+                                <option value="">Selecione</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="endereco">Endereço (Morada)</label>
+                            <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Contacto Telefônico</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="+244 912 345 678" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bi_passaporte">Número do BI ou Passaporte</label>
+                            <input type="text" id="bi_passaporte" name="bi_passaporte" placeholder="Ex: 12345678LA123" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Inscrever-se</button>
+                        <div class="loading" id="loading">Enviando inscrição...</div>
+                        <div class="success" id="success">Inscrição enviada com sucesso! Entraremos em contato em breve.</div>
+                    </form>
+                </section>
+            </aside>
+        </section>
+    </main>
+
+    <script>
+        const enrollButtons = document.querySelectorAll('.enroll-btn');
+        const registrationPanel = document.getElementById('registration-panel');
+        const courseTitle = document.getElementById('course-title');
+        const selectedCourse = document.getElementById('curso_selecionado');
+        const form = document.getElementById('registration-form');
+        const loading = document.getElementById('loading');
+        const success = document.getElementById('success');
+        const formPlaceholder = document.getElementById('form-placeholder');
+
+        enrollButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const courseName = button.dataset.course;
+                courseTitle.textContent = courseName;
+                selectedCourse.value = courseName;
+                registrationPanel.classList.add('active');
+                formPlaceholder.style.display = 'none';
+                registrationPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            loading.style.display = 'block';
+            success.style.display = 'none';
+            setTimeout(() => {
+                loading.style.display = 'none';
+                success.style.display = 'block';
+                form.reset();
+                courseTitle.textContent = 'Curso Selecionado';
+                selectedCourse.value = '';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
