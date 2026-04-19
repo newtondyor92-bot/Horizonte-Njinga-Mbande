@@ -6,6 +6,115 @@
     <title>actividades</title>
 <link rel="stylesheet" href="files/Css/actividade.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+               #logo{
+    width: 100px;
+    height: 100px;
+    transform: scale(2);
+   }
+   
+   
+   :root{
+        --cor_dos_card:#003366;
+    }
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif}
+body{background:#f5f9ff;color:#0a1f44}
+header{border-radius: 0px 0px 12px 12px;background:#0a3d91;color:#fff;padding:15px 30px;display:flex;justify-content:space-between;align-items:center;}
+nav a{color:#fff;margin:0 10px;text-decoration:none;font-weight:500}
+.btn{background:#1e6bff;color:#fff;padding:10px 15px;border-radius:5px;text-decoration:none}
+.container{padding:40px 20px}
+.title{font-size:32px;margin-bottom:10px;}
+.subtitle{color:#555;margin-bottom:30px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(370px,1fr));gap:20px}
+.card{height: 500px; background: #003366;/*background-image: url("imagem\ actividades/Fundo do footer.png")*/;border-radius:12px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,0.1);transition:0.6s}
+.card:hover{transform:translateY(-6px)}
+.card img{width:100%;height:270px;object-fit:scale-down;transform: scale(1.0);}
+.card-content{padding:15px}
+.date{font-size:12px;color:#ffffff;margin-bottom:8px}
+.card-title{font-size:20px;font-weight:bold;margin-bottom:25px;color:rgb(28, 205, 236);}
+.card a{color:rgb(28, 205, 236);font-size: 20px;}
+.card-desc{font-size:14px;color:#ebdede;}
+
+@media(max-width:768px){
+.title{font-size:24px}
+}
+/*parte do rodape*/
+
+.footer {
+  background: #0f172a;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer h2, .footer h3 {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  display: block;
+  color: #cbd5e1;
+  text-decoration: none;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+
+  transform: translateX(5px);
+}
+
+.footer-social .icons {
+  display: flex;
+  gap: 15px;
+  font-size: 34px;
+}
+
+.footer-social .icons a {
+  background: #071122;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.footer-social .icons a:hover {
+  background: #38bdf8;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #1e293b;
+  padding-top: 15px;
+  color: #94a3b8;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-social .icons {
+    justify-content: center;
+  }
+}
+
+        
+    </style>
 </head>
 
 <body>
@@ -75,7 +184,75 @@
 </footer>
 
 
-<script src="files/JS/actividade.js"></script>
+<script>
+
+    const dados = [
+{
+img:"imagem actividades/o enterro.jpg",
+data:"🗓️ 17,18,19 de Abril de 2026",
+titulo:"O ENTERRO",
+desc:"A Horizonte – Njinga Mbande apresenta uma emocionante peça teatral que promete prender a tua atenção do início ao fim! O Enterro traz uma história forte, cheia de emoções, conflitos e reflexões sobre a vida e...",
+link:"Ler mais"
+},
+{
+img:"imagem actividades/segredo da cama.jpg",
+data:"🗓️ 2,3,5 de Abril 2026",
+titulo:"O SEGREDO DA CAMA",
+desc:"A Horizonte – Njinga Mbande apresenta mais uma grande produção teatral que vai surpreender o público: “O Segredo da Cama”.Uma história envolvente cheia de mistério, emoções e reviravoltas, que explora relações humanas, escolhas da vida e consequências inesperada",
+link:"Ler mais"
+},
+{
+img:"imagem actividades/Noticia  do site.png",
+data:"🗓️ BREVEMENTE",
+titulo:"BREVEMENTE: SITE OFICIAL DA HORIZONTE NJINGA MBANDE!",
+desc:" 🌐Estamos as preparar algo grande para ti! Muito em breve, a Horizonte – Njinga Mbande vai lançar o seu site oficial, com um design moderno, elegante e totalmente intuitivo.",
+link:"Ler mais"
+
+},
+{
+img:"imagem actividades/o enterro.jpg",
+data:"🗓️ 17,18,19 de Abril de 2026",
+titulo:"O ENTERRO",
+desc:"A Horizonte – Njinga Mbande apresenta uma emocionante peça teatral que promete prender a tua atenção do início ao fim! O Enterro traz uma história forte, cheia de emoções, conflitos e reflexões sobre a vida e...",
+link:"Ler mais"
+},
+{
+img:"imagem actividades/segredo da cama.jpg",
+data:"🗓️ 2,3,5 de Abril 2026",
+titulo:"O SEGREDO DA CAMA",
+desc:"A Horizonte – Njinga Mbande apresenta mais uma grande produção teatral que vai surpreender o público: “O Segredo da Cama”.Uma história envolvente cheia de mistério, emoções e reviravoltas, que explora relações humanas, escolhas da vida e consequências inesperada",
+link:"Ler mais"
+
+},
+{
+img:"imagem actividades/Noticia  do site.png",
+data:"🗓️ BREVEMENTE",
+titulo:"BREVEMENTE: SITE OFICIAL DA HORIZONTE NJINGA MBANDE!",
+desc:" 🌐Estamos a preparar algo grande para ti! Muito em breve, a Horizonte – Njinga Mbande vai lançar o seu site oficial, com um design moderno, elegante e totalmente intuitivo.",
+link:"Ler mais"
+
+},]
+const container = document.getElementById('cards')
+dados.forEach((item,index)=>{
+const card = document.createElement('div')
+card.classList.add('card')
+card.innerHTML = `
+<img src="${item.img}" alt="">
+<div class="card-content">
+<div class="date">${item.data}</div>
+<div class="card-title">${item.titulo}</div>
+<div class="card-desc"><strong>${item.desc}</strong></div>
+
+<a href="detalhes_actividades.html?id=${index}" class="link">
+  ${item.link}
+</a>
+
+</div>
+`
+container.appendChild(card)
+});
+
+</script>
 </body>
 </html>
 
