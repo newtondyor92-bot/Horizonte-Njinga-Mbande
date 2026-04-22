@@ -4,43 +4,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Detalhes da Atividade</title>
-<link rel="stylesheet" href="files/Css/pagina_descricao.css">
+<link rel="stylesheet" href="../Css/pagina_descricao.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 
- #logo{
+  #logo{
     width: 90px;
     height: 90px;
-    transform: scale(2);
+    transform: scale(1);
    }
 
     :root{
         --cor_dos_card:#003366;
     }
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif}
-header{border-radius: 0px 0px 12px 12px;background:#0a3d91;color:#fff;padding:15px 30px;display:flex;justify-content:space-between;align-items:center}
-nav a{color:#fdfcfc;margin:0 10px;text-decoration:none;font-weight:500;}
+header{border-radius:0px 0px 12px 12px; position:fixed; top:0; left:0; width:100%; z-index:999; background:#0a3d91; color:#fff; padding:15px 10vw; display:flex; justify-content:space-between; align-items:center}
+header nav ul li a{color:#fff;text-decoration:none;font-weight:500}
 .btn{background:#1e6bff;color:#fff;padding:10px 15px;border-radius:5px;text-decoration:none}
 @media(max-width:768px){
 .title{font-size:24px}
 }
 
 
-body{
-  font-family: Arial;
-  background:#f5f6fa;
-  color:#222;
-}
+body{margin:0;padding-top:80px;font-family:Arial, sans-serif;background:#f5f6fa;color:#222;}
 
 /* NAV */
-nav{
-  padding:15px 40px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  border-radius: 12px;
-}
+nav{padding:0}
     #imagem{
         width: 800px;
         height: 500px;
@@ -251,19 +241,25 @@ max-width:900px;
   }
 }
 </style>
+    <link rel="stylesheet" href="../../styles/responsive.css">
 </head>
 
 <body>
-<header>
-<div><img src="../imagens/outras/logo_sem_fundo.png" id="logo" alt=""></div>
-<nav>
-<a href="#">Home</a>
-<a href="#">Eventos</a>
-<a href="#">Cursos</a>
-<a href="#">Contato</a>
-</nav>
-<a href="#" class="btn">Comprar Bilhete</a>
-</header>
+    <header>
+        <img src="../imagens/logo/logo_sem_fundo.png" id="logo" alt="Logotipo do Horizonte Njinga Mbande" width="66" height="33">
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Página Inicial</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn">Comprar Bilhete</a>
+    </header>
 
 <div class="container">
 
@@ -383,7 +379,7 @@ max-width:900px;
 const dados = [
 {
 img:"../imagens/outras/o enterro.jpg",
-data:"🗓️ 17,18,19 de Abril de 2026",
+data:"🗓�? 17,18,19 de Abril de 2026",
 titulo:"O ENTERRO",
 desc:"A Hori – Njinga Mbande apresenta uma emocionante peça teatral que promete prender a tua atenção do início ao fim! O Enterro traz uma história forte, cheia de emoções, conflitos e reflexões sobre a vida e...",
 link:"Ler mais"
@@ -391,40 +387,40 @@ link:"Ler mais"
 },
 {
 img:"../imagens/outras/o enterro.jpg",
-data:"🗓️ 2,3,5 de Abril 2026",
+data:"🗓�? 2,3,5 de Abril 2026",
 titulo:"O SEGREDO DA CAMA",
-desc:"A Horizonte – Njinga Mbande apresenta mais uma grande produção teatral que vai surpreender o público: “O Segredo da Cama”.Uma história envolvente cheia de mistério, emoções e reviravoltas, que explora relações humanas, escolhas da vida e consequências inesperada",
+desc:"A Horizonte – Njinga Mbande apresenta mais uma grande produção teatral que vai surpreender o público: “O Segredo da Cama�?.Uma história envolvente cheia de mistério, emoções e reviravoltas, que explora relações humanas, escolhas da vida e consequências inesperada",
 link:"Ler mais"
 },
 {
 img:"../imagens/outras/o enterro.jpg",
-data:"🗓️ BREVEMENTE",
+data:"🗓�? BREVEMENTE",
 titulo:"BREVEMENTE: SITE OFICIAL DA HORIZONTE NJINGA MBANDE!",
-desc:" 🌐Estamos a preparar algo grande para ti! Muito em breve, a Horizonte – Njinga Mbande vai lançar o seu site oficial, com um design moderno, elegante e totalmente intuitivo.",
+desc:" �?Estamos a preparar algo grande para ti! Muito em breve, a Horizonte – Njinga Mbande vai lançar o seu site oficial, com um design moderno, elegante e totalmente intuitivo.",
 link:"Ler mais"
 
 },
 {
 img:"../imagens/outras/o enterro.jpg",
-data:"🗓️ 17,18,19 de Abril de 2026",
+data:"🗓�? 17,18,19 de Abril de 2026",
 titulo:"O ENTERRO",
 desc:"A Horizonte – Njinga Mbande apresenta uma emocionante peça teatral que promete prender a tua atenção do início ao fim! O Enterro traz uma história forte, cheia de emoções, conflitos e reflexões sobre a vida e...",
 link:"Ler mais"
 },
 {
 img:"../imagens/outras/o enterro.jpg",
-data:"🗓️ 2,3,5 de Abril 2026",
+data:"🗓�? 2,3,5 de Abril 2026",
 titulo:"O SEGREDO DA CAMA",
-desc:"A Horizonte – Njinga Mbande apresenta mais uma grande produção teatral que vai surpreender o público: “O Segredo da Cama”.Uma história envolvente cheia de mistério, emoções e reviravoltas, que explora relações humanas, escolhas da vida e consequências inesperada",
+desc:"A Horizonte – Njinga Mbande apresenta mais uma grande produção teatral que vai surpreender o público: “O Segredo da Cama�?.Uma história envolvente cheia de mistério, emoções e reviravoltas, que explora relações humanas, escolhas da vida e consequências inesperada",
 link:"Ler mais"
 
 
 },
 {
 img:"../imagens/outras/o enterro.jpg",
-data:"🗓️ BREVEMENTE",
+data:"🗓�? BREVEMENTE",
 titulo:"BREVEMENTE: SITE OFICIAL DA HORIZONTE NJINGA MBANDE!",
-desc:" 🌐Estamos a preparar algo grande para ti! Muito em breve, a Horizonte – Njinga Mbande vai lançar o seu site oficial, com um design moderno, elegante e totalmente intuitivo.",
+desc:" �?Estamos a preparar algo grande para ti! Muito em breve, a Horizonte – Njinga Mbande vai lançar o seu site oficial, com um design moderno, elegante e totalmente intuitivo.",
 link:"Ler mais"
 
 
@@ -446,3 +442,4 @@ document.getElementById("imagem").src = atividade.img;
 </script>
 </body>
 </html>
+

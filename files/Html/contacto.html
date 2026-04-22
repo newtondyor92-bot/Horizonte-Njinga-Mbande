@@ -1,19 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="footer.css">
     <title>Contacto</title>
+    <style>
+        #logo{
+            width: 90px;
+            height: 90px;
+            transform: scale(1);
+        }
+        body{margin:0;padding-top:80px;font-family:Arial, sans-serif;background:#f5f9ff;color:#0a1f44}
+        header{border-radius:0px 0px 12px 12px; position:fixed; top:0; left:0; width:100%; z-index:999; background:#0a3d91; color:#fff; padding:15px 10vw; display:flex; justify-content:space-between; align-items:center}
+        header img{display:block}
+        header nav ul{display:flex; gap:18px; align-items:center; list-style:none; margin:0; padding:0}
+        header nav ul li a{color:#fff; text-decoration:none; font-weight:500}
+        .btn{background:#1e6bff; color:#fff; padding:10px 15px; border-radius:5px; text-decoration:none}
+        .contacto-page{max-width:900px;margin:40px auto;padding:0 20px}
+        .contacto-page h1{color:#0a3d91}
+        .contacto-page p{color:#3b4c76;line-height:1.7}
+        @media(max-width:640px){header{flex-wrap:wrap;gap:15px}header nav ul{flex-wrap:wrap;gap:12px}}header nav ul{flex-wrap:wrap;gap:12px}}
+    </style>
+    <link rel="stylesheet" href="../../styles/responsive.css">
 </head>
 <body>
-    <h1>Contacto</h1>
-    <p>Contenido de la página de contacto.</p>
-    
-    <!-- Footer component -->
-    <footer>
-        <p>&copy; 2026 Mi Empresa. Todos los derechos reservados.</p>
-    </footer>
-    
+    <header>
+        <img src="../imagens/logo/logo_sem_fundo.png" id="logo" alt="Logotipo do Horizonte Njinga Mbande" width="66" height="33">
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Página Inicial</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn">Comprar Bilhete</a>
+    </header>
+
+    <main class="contacto-page">
+        <h1>Contacto</h1>
+        <p>Conteúdo da página de contacto.</p>
+    </main>
 </body>
 </html>

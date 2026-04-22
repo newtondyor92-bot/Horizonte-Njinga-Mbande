@@ -1,54 +1,304 @@
-.container {
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 1200px;
+/* Responsividade global para telemóveis e tablets */
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.header {
-    background-color: #f8f9fa;
-    padding: 20px;
-    text-align: center;
+header,
+footer,
+main,
+section,
+div,
+article,
+aside {
+  box-sizing: border-box;
 }
 
-.navbar {
-    display: flex;
+/* Tablets */
+@media (max-width: 1024px) {
+  body {
+    padding-top: 120px !important;
+  }
+
+  header {
+    padding: 14px 24px !important;
+    gap: 16px;
+  }
+
+  #logo {
+    width: 72px !important;
+    height: 72px !important;
+  }
+
+  header nav {
+    width: 100%;
+    order: 3;
+  }
+
+  header nav ul {
+    display: flex !important;
+    flex-wrap: wrap !important;
     justify-content: center;
-    background-color: #343a40;
-}
+    gap: 12px !important;
+  }
 
-.nav-item {
-    margin: 0 15px;
-}
+  .btn {
+    white-space: nowrap;
+  }
 
-.nav-link {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.section {
-    padding: 30px 0;
-}
-
-.footer {
-    background-color: #f8f9fa;
+  .home-hero,
+  .apresentacao {
+    min-height: 70vh;
+    height: auto !important;
+    padding: 40px 24px !important;
+    margin-top: 0 !important;
+    align-items: center !important;
     text-align: center;
-    padding: 20px;
+  }
+
+  .home-hero h1,
+  .apresentacao h1 {
+    font-size: 48px !important;
+    line-height: 1.1;
+  }
+
+  .home-hero h3,
+  .apresentacao h3 {
+    font-size: 24px !important;
+  }
+
+  .events-page,
+  .gallery-page,
+  .courses-page,
+  .about-page,
+  .contacto-page,
+  .container,
+  .outras {
+    margin: 24px auto !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .events-grid,
+  .gallery-grid,
+  .portfolio-grid,
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .vision-mission,
+  .courses-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  .course-form-panel {
+    min-height: auto !important;
+  }
+
+  #imagem {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  #partilhar {
+    margin-left: 0 !important;
+    justify-content: center !important;
+    flex-wrap: wrap;
+    transform: scale(1.2) !important;
+  }
 }
 
+/* Telemóveis */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-    }
-    .nav-item {
-        margin: 10px 0;
-    }
+  body {
+    padding-top: 150px !important;
+  }
+
+  header {
+    padding: 12px 16px !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  header nav ul {
+    flex-direction: row;
+    flex-wrap: wrap !important;
+    justify-content: center;
+    gap: 10px !important;
+  }
+
+  header nav ul li {
+    width: auto;
+  }
+
+  header nav ul li a {
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 240px;
+    text-align: center;
+  }
+
+  #logo {
+    width: 64px !important;
+    height: 64px !important;
+  }
+
+  .home-hero,
+  .apresentacao {
+    min-height: 60vh;
+    padding: 32px 16px !important;
+  }
+
+  .home-hero h1,
+  .apresentacao h1,
+  .events-intro h1,
+  .gallery-intro h1,
+  .courses-intro h1,
+  .about-section h2,
+  .contacto-page h1,
+  .title,
+  h1 {
+    font-size: 32px !important;
+    line-height: 1.15;
+  }
+
+  .home-hero h3,
+  .apresentacao h3,
+  .events-intro p,
+  .gallery-intro p,
+  .courses-intro p,
+  .contacto-page p,
+  .subtitle {
+    font-size: 16px !important;
+  }
+
+  .events-grid,
+  .gallery-grid,
+  .portfolio-grid,
+  .cards {
+    grid-template-columns: 1fr !important;
+  }
+
+  .event-card img,
+  .gallery-card img,
+  .card img {
+    height: auto !important;
+    max-height: 260px;
+    object-fit: cover !important;
+  }
+
+  .card {
+    height: auto !important;
+  }
+
+  .course-card,
+  .course-form-panel,
+  .vision,
+  .mission,
+  .portfolio-item,
+  .gallery-card,
+  .event-card {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .form-group input,
+  .form-group select,
+  .submit-btn,
+  .enroll-btn {
+    width: 100% !important;
+  }
+
+  .redes_sociais {
+    height: auto !important;
+    padding: 12px !important;
+    flex-direction: column;
+    align-items: center !important;
+  }
+
+  #partilhar {
+    gap: 14px !important;
+    transform: scale(1) !important;
+  }
+
+  .cards {
+    gap: 16px !important;
+  }
+
+  .footer {
+    padding: 32px 16px !important;
+  }
+
+  .footer-container {
+    gap: 20px !important;
+  }
+
+  .footer-social .icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
-@media (max-width: 576px) {
-    .header {
-        font-size: 1.2em;
-    }
-    .footer {
-        font-size: 0.9em;
-    }
+/* Telemóveis pequenos */
+@media (max-width: 480px) {
+  body {
+    padding-top: 170px !important;
+  }
+
+  header nav ul li a {
+    font-size: 13px;
+  }
+
+  .home-hero h1,
+  .apresentacao h1,
+  .events-intro h1,
+  .gallery-intro h1,
+  .courses-intro h1,
+  .about-section h2,
+  .contacto-page h1,
+  .title,
+  h1 {
+    font-size: 26px !important;
+  }
+
+  .home-hero h3,
+  .apresentacao h3 {
+    font-size: 15px !important;
+  }
+
+  .events-page,
+  .gallery-page,
+  .courses-page,
+  .about-page,
+  .contacto-page,
+  .container,
+  .outras {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .course-card,
+  .course-form-panel,
+  .vision,
+  .mission,
+  .portfolio-item,
+  .gallery-card,
+  .event-card {
+    border-radius: 14px !important;
+  }
+
+  .footer-social .icons a {
+    width: 42px !important;
+    height: 42px !important;
+  }
 }
